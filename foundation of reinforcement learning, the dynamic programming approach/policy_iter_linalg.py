@@ -209,7 +209,7 @@ def main_linalg():
 def main():
 
     #main_iterative()
-    main_linalg()
+    main_linalg() # keeps on running, please beware.
 
 
 if __name__ == "__main__":

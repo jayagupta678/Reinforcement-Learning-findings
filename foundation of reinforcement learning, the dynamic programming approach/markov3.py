@@ -5,6 +5,13 @@ Created on Thu Aug 29 11:45:42 2019
 @author: E19SOE814
 """
 '''
+The process is in s0 90% of the time and it can
+ move to s1 the remaining 10% of the time. 
+When the process is in state s1 it will remain 
+there 50% of the time. Given this data we
+can create a Transition Matrix T as follow:
+    
+    
 Let’s suppose we have to guess were the process 
 will be after 3 steps and after 50 steps. 
 How can we do it? We are interested in chains 

@@ -9,6 +9,9 @@ Created on Thu Aug 29 11:42:19 2019
 # =============================================================================
 # Markov chain of two state s0, s1, Calculation of Transition probability Matrix after given interations. 
 # =============================================================================
+The process is in s0 90% of the time and it can move to s1 the remaining 10% of the time. 
+When the process is in state s1 it will remain there 50% of the time. Given this data we
+can create a Transition Matrix T as follow:
 
 """
 

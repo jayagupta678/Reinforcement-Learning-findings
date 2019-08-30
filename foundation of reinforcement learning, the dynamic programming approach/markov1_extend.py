@@ -6,6 +6,12 @@ Created on Thu Aug 29 11:57:21 2019
 """
 
 '''
+The process is in s0 90% of the time and it can
+ move to s1 the remaining 10% of the time. 
+When the process is in state s1 it will remain 
+there 50% of the time. Given this data we
+can create a Transition Matrix T as follow:
+    
  the probability of being in a specific 
  state after k iterations, given that
  the initial distribution which represent
@@ -32,7 +38,7 @@ import numpy as np
 
 
 #Declaring the initial distribution v  = np.array([[1,0]])
-v = [1,0]
+v = [.7,.3]
 #Declaring the Transition Matrix T
 T = np.array([[0.90, 0.10],
               [0.50, 0.50]])
