@@ -1,0 +1,25 @@
+    1  cd jaya
+    2  ls
+    3  sudo dpkg -i mendeley-reference-manager-2.14.0-x86_64.AppImage
+    4  sudo apt-get update
+    5  sudo apt-get install mendeleydesktop
+    6  sudo dpkg -i mendeley-reference-manager-2.14.0-x86_64.AppImage
+    7  sudo dpkg ––configure –a
+    8  sudo apt-get install –f
+    9  +
+   10  sudo apt-get install –f
+   11  sha256sum Anaconda3-2019.03-Linux-x86_64.sh
+   12  source activate core
+   13  conda list --explicit
+   14  source activate base
+   15  source ~/anaconda3/bin/activate root
+   16  conda list --explicit
+   17  conda list --explicit > spec-file.txt
+   18  conda install --name core --file spec-file.txt
+   19  conda activate core
+   20  python
+   21  conda info --envs
+   22  conda create --name clonecore --clone myenv
+   23  conda info --envs
+   24  conda create --name clonecore --file spec-file.txt
+   25  history > history101019.txt
