@@ -1,25 +1,33 @@
-    1  cd jaya
-    2  ls
-    3  sudo dpkg -i mendeley-reference-manager-2.14.0-x86_64.AppImage
-    4  sudo apt-get update
-    5  sudo apt-get install mendeleydesktop
-    6  sudo dpkg -i mendeley-reference-manager-2.14.0-x86_64.AppImage
-    7  sudo dpkg ––configure –a
-    8  sudo apt-get install –f
-    9  +
-   10  sudo apt-get install –f
-   11  sha256sum Anaconda3-2019.03-Linux-x86_64.sh
-   12  source activate core
-   13  conda list --explicit
-   14  source activate base
-   15  source ~/anaconda3/bin/activate root
-   16  conda list --explicit
-   17  conda list --explicit > spec-file.txt
-   18  conda install --name core --file spec-file.txt
-   19  conda activate core
-   20  python
-   21  conda info --envs
-   22  conda create --name clonecore --clone myenv
-   23  conda info --envs
-   24  conda create --name clonecore --file spec-file.txt
-   25  history > history101019.txt
+    1  cd temp
+    2  cd jaya
+    3  curl -O https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+    4  sudo apt install curl
+    5  sudo apt-get update
+    6  sudo apt-get install curl
+    7  curl -O https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+    8  bash Anaconda3-2019.03-Linux-x86_64.sh
+    9  ls
+   10  Anaconda3-2019.03-Linux-x86_64.sh
+   11  bash Anaconda3-2019.07-Linux-x86_64.sh
+   12  source ~/.bashrc
+   13  conda list
+   14  conda create --name core python=3
+   15  conda activate core
+   16  ls
+   17  anaconda-navigator
+   18  conda env export -n core -f ~/Desktop/core.yaml
+   19  source ~/anaconda3/bin/activate root
+   20  conda activate core
+   21  anaconda-navigator
+   22  source ~/anaconda3/bin/activate root
+   23  anaconda-navigator
+   24  history > history101019.txt
+   25  conda activate core
+   26  conda env export -n core -f ~/Desktop/core.yaml
+   27  pip install -e '.[box2d]'
+   28  pip install box2d-py
+   29  pip install atari-py
+   30  pip install Pillow
+   31  pip install opencv-python
+   32  pip install mujoco-py
+   33  history > history101019.txt
