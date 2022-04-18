@@ -15,3 +15,7 @@ https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
 
 http://setosa.io/#/ 
 This is an interactive site to understand animated visual representations of concepts
+
+
+Sutton and Berto
+https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
